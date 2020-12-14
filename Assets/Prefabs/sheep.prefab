@@ -99,6 +99,8 @@ MonoBehaviour:
   cutSheepSprite: {fileID: 21300000, guid: 97605b97c0b9aa542a1703ef77dd0579, type: 3}
   woolPrefab: {fileID: 545425790602605938, guid: dace781ced60e9c489f4e309e082840c,
     type: 3}
+  defaultSprite: {fileID: 0}
+  sheepData: {fileID: 11400000, guid: e6db40a86d98d1b459c62480d56ed537, type: 2}
 --- !u!60 &1196258029383488002
 PolygonCollider2D:
   m_ObjectHideFlags: 0

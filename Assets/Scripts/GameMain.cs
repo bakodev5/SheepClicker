@@ -25,8 +25,7 @@ public class GameMain : MonoBehaviour
         var wools = FindObjectsOfType<Wool>(); //画面上の全てのWoolスクリプトが付いたオブジェクトを検索してWool配列woolsに入れる
         foreach(var wool in wools)
         {
-            Destroy(wool.gameObject);
-            wallet.money += 100; //TODO本当は羊毛ごとに金額を変えたい
+            wool.Sell(wallet);
         }
 
     }

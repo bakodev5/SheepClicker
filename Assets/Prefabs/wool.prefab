@@ -133,4 +133,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e445e2e0cb2ae84e8e7b5afcbb04e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidbody2D: {fileID: 3812313623547517437}
+  _rigidbody2D: {fileID: 3812313623547517437}
+  price: 100
