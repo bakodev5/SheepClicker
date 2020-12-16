@@ -48,7 +48,7 @@ public class Sheep : MonoBehaviour
     private void Shaving()
     {
         if (woolCnt <= 0) return;   //もう刈り取れる羊毛はないので何もしない
-        var shavingWool = sheepData.woolCnt * Random.Range(30, 40) / 100; //3~40%の羊毛を刈り取る
+        var shavingWool = (int)(sheepData.woolCnt * Random.Range(0.3f, 0.4f)); //3~40%の羊毛を刈り取る
         if (woolCnt < shavingWool) shavingWool = woolCnt;   //今羊に残っている羊毛より多い羊毛は取れないので、上限
 
         woolCnt -= shavingWool; //今回刈り取る分を保持している羊毛から減らし

@@ -15,5 +15,5 @@ MonoBehaviour:
   color: {r: 0.754717, g: 0.7226771, b: 0.7226771, a: 1}
   basePrice: 10
   extendPrice: 5
-  macCount: 10
+  maxCount: 10
   woolCnt: 5
