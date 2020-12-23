@@ -134,4 +134,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody2D: {fileID: 3812313623547517437}
-  price: 100
+  woolSpriteRenderer: {fileID: 3812313623547517442}
+  woolColor: {r: 1, g: 1, b: 1, a: 0}
+  price: 10

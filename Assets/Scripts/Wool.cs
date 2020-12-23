@@ -5,6 +5,10 @@ using UnityEngine;
 public class Wool : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D _rigidbody2D;
+    [SerializeField] private SpriteRenderer woolSpriteRenderer;
+
+    //羊毛の色
+    public Color woolColor;
 
     //羊毛の売却価格
     public int price = 100;
@@ -21,6 +25,9 @@ public class Wool : MonoBehaviour
     {
         _rigidbody2D.AddForce(Quaternion.Euler(0, 0, Random.Range(-15.0f, 15.0f)) * Vector2.up * 4, ForceMode2D.Impulse);
         transform.localScale = Vector3.one * Random.Range(0.4f, 1.5f);
+
+        woolColor.a = 0.9f;
+        woolSpriteRenderer.color = woolColor;
     }
 
     // Update is called once per frame

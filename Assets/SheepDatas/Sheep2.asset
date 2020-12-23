@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0c9058361f1ef2428b49a3daf78daed, type: 3}
   m_Name: Sheep2
   m_EditorClassIdentifier: 
-  color: {r: 0.9433962, g: 0.4227483, b: 0.6544007, a: 1}
+  color: {r: 1, g: 0.7490196, b: 0.7490196, a: 1}
   basePrice: 100
   extendPrice: 50
   maxCount: 10
