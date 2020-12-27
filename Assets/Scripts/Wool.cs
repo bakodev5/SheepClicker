@@ -7,6 +7,8 @@ public class Wool : MonoBehaviour
     [SerializeField] private Rigidbody2D _rigidbody2D;
     [SerializeField] private SpriteRenderer woolSpriteRenderer;
 
+    [SerializeField] private Coin coinPrefab;
+
     //羊毛の色
     public Color woolColor;
 
@@ -16,7 +18,10 @@ public class Wool : MonoBehaviour
     //羊毛の売却処理
     public void Sell(Wallet wallet)
     {
-        wallet.money += price;
+        var coin = Instantiate(coinPrefab, transform.position, transform.rotation);
+        coin.value = price;
+        coin.wallet = wallet;
+
         Destroy(gameObject);
     }
 

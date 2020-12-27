@@ -12,6 +12,7 @@ public class SheepButton : MonoBehaviour
 
     public SheepGenerator sheepGenerator;
 
+
     //羊画像
     [SerializeField]
     private Image sheepImage;
@@ -41,10 +42,10 @@ public class SheepButton : MonoBehaviour
 
     public void CreateSheep()
     {
-        sheepGenerator.CreateSheep(sheepData);
         var price = GetPrice(); //現在の頭数から次の購入金額を計算
         wallet.money -= price; //購入分所持金から引く
         currentCnt++; //現在の頭数+1
+        sheepGenerator.CreateSheep(sheepData); //羊を生成
     }
 
     // Start is called before the first frame update

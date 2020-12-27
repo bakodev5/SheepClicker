@@ -16,4 +16,4 @@ MonoBehaviour:
   basePrice: 1100
   extendPrice: 500
   maxCount: 10
-  woolCnt: 5000
+  woolCnt: 400
