@@ -12,6 +12,8 @@ public class SheepButton : MonoBehaviour
 
     public SheepGenerator sheepGenerator;
 
+    GameObject saveLoadManager; //羊購入時のデータ保存処理
+
 
     //羊画像
     [SerializeField]
@@ -45,13 +47,16 @@ public class SheepButton : MonoBehaviour
         var price = GetPrice(); //現在の頭数から次の購入金額を計算
         wallet.money -= price; //購入分所持金から引く
         currentCnt++; //現在の頭数+1
+        SoundManager_kari.instance.createSheepSE(); //シングルトンで簡易音声処理
         sheepGenerator.CreateSheep(sheepData); //羊を生成
+        saveLoadManager.GetComponent<SaveLoadManager>().Save();
     }
 
     // Start is called before the first frame update
     void Start()
     {
         button.onClick.AddListener(CreateSheep);
+        saveLoadManager = GameObject.Find("SaveLoadManager");
     }
 
     // Update is called once per frame

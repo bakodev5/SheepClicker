@@ -96,3 +96,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 0
   wallet: {fileID: 0}
+  coinSE: {fileID: 8300000, guid: 54f0a224ddd234a419b3ebb1b8826fdd, type: 3}

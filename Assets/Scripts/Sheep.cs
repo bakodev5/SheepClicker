@@ -16,7 +16,7 @@ public class Sheep : MonoBehaviour
 
     //羊毛の量
     private int woolCnt;
-    
+
     //初期化処理
     private void Initialize()
     {
@@ -61,6 +61,10 @@ public class Sheep : MonoBehaviour
         //TODO Woolオブジェクトに今回刈り取った羊毛と色情報を渡す
         wool.price = shavingWool;
         wool.woolColor = sheepData.color;
+
+        //効果音入れる（本来は音声管理マネージャーで管理したい。今はシングルトン）
+        SoundManager_kari.instance.shavingSE();
+
     }
 
     private void OnMouseOver()

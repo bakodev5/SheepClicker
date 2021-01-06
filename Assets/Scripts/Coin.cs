@@ -17,6 +17,7 @@ public class Coin : MonoBehaviour
     void Start()
     {
         waitTime = Random.Range(0.1f, 0.3f);
+
     }
 
     // Update is called once per frame
@@ -32,6 +33,7 @@ public class Coin : MonoBehaviour
         {
             wallet.money += value;
             Destroy(gameObject);
+            SoundManager_kari.instance.getCoinSE(); //シングルトン使って音声処理
         }
     }
 }
