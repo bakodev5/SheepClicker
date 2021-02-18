@@ -33,7 +33,7 @@ public class Coin : MonoBehaviour
         {
             wallet.money += value;
             Destroy(gameObject);
-            SoundManager_kari.instance.getCoinSE(); //シングルトン使って音声処理
+            SoundManager.Instance.Play("コイン"); //シングルトン使って音声処理
         }
     }
 }
